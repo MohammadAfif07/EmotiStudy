@@ -1,0 +1,45 @@
+[versions]
+core-ktx = "1.12.0"
+appcompat = "1.6.1"
+material = "1.11.0"
+constraintlayout = "2.1.4"
+camera-core = "1.2.3"
+camera-camera2 = "1.2.3"
+camera-lifecycle = "1.2.3"
+camera-view = "1.2.3"
+mlkit-face-detection = "16.1.5"
+mlkit-nlp-sentiment = "16.1.4"
+lifecycle-runtime-ktx = "2.6.2"
+activity-ktx = "1.8.0"
+kotlinx-coroutines-android = "1.7.3"
+navigation-fragment-ktx = "2.7.7"
+navigation-ui-ktx = "2.7.7"
+junit = "4.13.2"
+androidx-junit = "1.1.5"
+espresso-core = "3.5.1"
+tensorflow-lite-support = "0.1.0"
+tensorflow-lite-metadata = "0.1.0"
+
+[libraries]
+core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
+appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+camera-core = { module = "androidx.camera:camera-core", version.ref = "camera-core" }
+camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "camera-camera2" }
+camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "camera-lifecycle" }
+camera-view = { module = "androidx.camera:camera-view", version.ref = "camera-view" }
+mlkit-face-detection = { module = "com.google.mlkit:face-detection", version.ref = "mlkit-face-detection" }
+mlkit-nlp-sentiment = { module = "com.google.mlkit:nlp-sentiment", version.ref = "mlkit-nlp-sentiment" }
+lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
+activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activity-ktx" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinx-coroutines-android" }
+navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigation-fragment-ktx" }
+navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigation-ui-ktx" }
+junit = { module = "junit:junit", version.ref = "junit" }
+androidx-junit = { module = "androidx.test.ext:junit", version.ref = "androidx-junit" }
+espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso-core" }
+tensorflow-lite-support = { group = "org.tensorflow", name = "tensorflow-lite-support", version.ref = "tensorflow-lite-support" }
+tensorflow-lite-metadata = { group = "org.tensorflow", name = "tensorflow-lite-metadata", version.ref = "tensorflow-lite-metadata" }
+
+

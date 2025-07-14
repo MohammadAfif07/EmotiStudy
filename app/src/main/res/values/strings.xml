@@ -1,0 +1,45 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">EmotiStudy</string>
+
+    <!-- Permissions -->
+    <string name="camera_permission_denied">Camera permission denied.</string>
+    <string name="audio_permission_denied">Audio permission denied.</string>
+
+    <!-- Pomodoro -->
+    <string name="pomodoro_idle">Pomodoro is not running</string>
+    <string name="pomodoro_running_format">Pomodoro: %1$d:%2$02d remaining</string>
+    <string name="pomodoro_complete">Pomodoro Complete!</string>
+
+    <!-- Mood Detection -->
+    <string name="mood_detection_running">Mood detection is already running.</string>
+    <string name="starting_in">Starting in %1$d seconds…</string>
+    <string name="detecting_mood">Detecting mood…</string>
+    <string name="processing">Processing…</string>
+    <string name="mood_result_format">Detected Mood (%1$s): %2$s</string>
+
+    <!-- Voice Mood -->
+    <string name="speech_not_available">Speech recognition not available on this device.</string>
+    <string name="voice_recognition_error">Voice recognition failed. Please try again.</string>
+    <string name="speak_mood_prompt">Please describe how you’re feeling…</string>
+    <string name="listening">🎤 Listening…</string>
+
+    <!-- Typing Mood -->
+    <string name="typing_mood_format">Typing Mood: %1$s</string>
+
+    <!-- Face Mood Buttons -->
+    <string name="start_face_mood">Start Face Mood Detection</string>
+    <string name="stop_face_mood">Stop Face Mood Detection</string>
+
+    <!-- UI Strings for HomeActivity -->
+    <string name="welcome_title">Welcome to EmotiStudy</string>
+    <string name="detect_mood">Detect Mood</string>
+    <string name="typing_mood">Typing Mood Detection</string>
+    <string name="start_study_timer">Start Study Timer</string>
+
+    <!-- Voice Mood Button -->
+    <string name="voice_mood">Voice Mood Detection</string>
+
+    <!-- Pomodoro Button (Emoji Style, Optional) -->
+    <string name="start_pomodoro">⏱️ Start Study Timer</string>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".HomeActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="24dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDetectMood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detect_mood"
+                app:icon="@drawable/ic_mood"
+                app:iconPadding="8dp"
+                app:iconGravity="textStart"
+                android:layout_marginBottom="12dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnVoiceMood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/voice_mood"
+                app:icon="@drawable/ic_mic"
+                app:iconPadding="8dp"
+                app:iconGravity="textStart"
+                android:layout_marginBottom="12dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTypingMood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/typing_mood"
+                app:icon="@drawable/ic_keyboard"
+                app:iconPadding="8dp"
+                app:iconGravity="textStart"
+                android:layout_marginBottom="12dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnStartTimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/start_study_timer"
+                app:icon="@drawable/ic_timer"
+                app:iconPadding="8dp"
+                app:iconGravity="textStart"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <color name="backgroundColor">#F5F5F5</color> <!-- Light gray background -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Optional: your theme colors -->
+    <color name="primaryColor">#4CAF50</color>
+    <color name="accentColor">#FF9800</color>
+</resources>

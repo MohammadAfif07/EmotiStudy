@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/tvFaceDetectionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Face Detection Screen"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Camera Preview and Face Overlay -->
+    <FrameLayout
+        android:id="@+id/frameCameraContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvFaceDetectionTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintDimensionRatio="3:4"
+        app:layout_constraintBottom_toTopOf="@id/tvMoodResult">
+
+        <!-- Camera Preview -->
+        <androidx.camera.view.PreviewView
+            android:id="@+id/previewView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Face Overlay View -->
+        <com.afif.emotistudy.FaceOverlayView
+            android:id="@+id/faceOverlayView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+    </FrameLayout>
+
+    <!-- Mood Result Display -->
+    <TextView
+        android:id="@+id/tvMoodResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mood: Unknown"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toBottomOf="@id/frameCameraContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Start Detection Button -->
+    <Button
+        android:id="@+id/btnCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Face Detection"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvMoodResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Voice Mood Detection Button -->
+    <Button
+        android:id="@+id/btnVoiceMood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voice Mood Detection"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/btnCapture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Start Pomodoro Button -->
+    <Button
+        android:id="@+id/btnPomodoro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Pomodoro"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/btnVoiceMood"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
